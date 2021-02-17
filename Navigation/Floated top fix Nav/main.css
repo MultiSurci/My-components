@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+nav {
+  background-color: black;
+  padding: 1rem;
+}
+nav a {
+  font-family: 'Space Mono', monospace;
+  color:white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: .5rem 1rem;
+}
+.sign-up {
+  border-radius: 9999px;
+  border: 1px solid hsla(0,0%,100%,.2); 
+}
+.sign-up:hover {
+  background-color: #fff;
+  color: #000;
+  transition: background-color .15s ease-in-out;
+  
+}
+nav a:hover {
+  color: hsl(0, 0%, 77%);
+  transition: : color .15s ease-in-out;
+  
+}
+section {
+  font-size: 1rem;
+  font-family: 'Space Mono', monospace;
+}
+
+@media (min-width: 768px) {
+  nav {
+    position:fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  nav a {
+    float: right;
+  }
+  .home {
+    float: left;
+  }
+  
+  /*Clearfix*/
+   nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+ }
+
+@media (min-width: 768px) {
+
+  section {
+    width: 60%;
+    margin: 5.35rem auto 4.25rem;
+  }
+}
+p {
+  margin-bottom: 2.25rem;
+  padding: .5rem;
+}
